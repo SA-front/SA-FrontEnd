@@ -10,6 +10,7 @@
     - manage sales reports
     - manage employees
 - rating box
+- manage account page
 
 #### Done:
 - all customer pages except manage account
