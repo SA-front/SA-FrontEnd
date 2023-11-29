@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Qmotors</title>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/bootstrap.css">
+<link rel="stylesheet" href="./css/all.min.css">
+<link rel="stylesheet" href="./css/project-A.css">
+<link rel="icon" href="./images/LOGO.ico">
+<link rel="stylesheet" href="./css/Product_Page.css">
+<!-- js bootstrap -->
+<script src="js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section id="title">
+      <div class="container-fluid">
+        <!-- Nav Bar -->
+
+            <nav class="navbar navbar-expand-lg navbar-home">
+
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="./index.html" class="navbar-brand">
+        <img src="./images/Icon.png" alt="icon" style="width: 200px;">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+          
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item" id="navbar">
+            <!--<button type="button" class="btn btn-outline-dark " >
+            <a href="./contact.php" class="nav-link">Contact</a>
+          </button>
+
+          <button type="button" class="btn btn-outline-dark">
+            <a href="#cta" class="nav-link">Cart</a>
+          </button>-->
+          <button type="button" class="btn btn-outline-dark">
+            <a href="./Product_Page.html" class="nav-link">Games</a></button>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+<script>
+  let el =" <button type='button' class='btn btn-outline-dark ' >\
+              <a href='profile.html' class='nav-link'>Profile</a>\
+            </button>";
+  let el2 =" <button type='button' class='btn btn-outline-dark ' >\
+              <a href='cart.html' class='nav-link'>Cart</a>\
+            </button>";
+  let el3 =" <button type='button' class='btn btn-outline-dark ' >\
+              <a href='login.html' class='nav-link'>Sign In</a>\
+            </button>";
+  let el4 =" <button type='button' class='btn btn-outline-dark ' >\
+              <a href='signup.html' class='nav-link'>Sign Up</a>\
+            </button>";
+  /*let btn=new HTMLButtonElement();
+  btn.className='btn btn-outline-dark ';
+  btn.type='button';
+  let lnk=new HTMLAnchorElement();
+  lnk.className='nav-link';
+  lnk.href='profile.html';
+  lnk.innerText='Profile';*/
+
+  if(sessionStorage.getItem("name")!=null)
+    document.querySelector("#navbar").innerHTML+=el+el2;
+</script>
+
+        <!-- Title -->
+
+        <div class="row title-row">
+          <div class="col-lg-6 ">
+          </div>
+          <div class="col-lg-6">
+
+          <h1 class="n">Buy the best and latest games at EroGamesPro!</h1>
+            <div class="bottons " id="bottons">
+            
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+                    <div class = "Latest-Cars" style = "
+    width: 90%;
+    height: 52px;
+    line-height: 2;
+    font-size: 22px;
+    background: #18221c;
+    color: #fff;
+    margin: 0 auto;
+">
+                        Latest Added Games :
+                  </div>
+    <!--Cars-->
+    <div>
+      <div>
+        <div style="display: flex; justify-content: space-between; margin: 15px 5%; flex-wrap: wrap; gap: 10px;">
+        
+                      <a href = 'cars.php?Id=1' style = 'text-decoration: none;' >
+                      <div class='card__body'>
+                      <div class='card__body-cover'>
+                        <img src='images/Halo_Infinite.png' alt=''>
+                      </div>
+                      <header class='card__body-header'>
+                        <p class='card__body-header-subtitle'>Halo Infinite</p>
+                      </header>
+                      <h2>2200$</h2>
+                    </div>
+                      </a>
+
+                      
+                      <a href = 'cars.php?Id=2' style = 'text-decoration: none;' >
+                      <div class='card__body'>
+                      <div class='card__body-cover'>
+                        <img src='images/Forza_Horizon_5_cover_art.jpg' alt=''>
+                      </div>
+                      <header class='card__body-header'>
+                        <p class='card__body-header-subtitle'>Forza Horizon 5</p>
+                      </header>
+                      <h2>1300$</h2>
+                    </div>
+                      </a>
+
+                      
+                      <a href = 'cars.php?Id=3' style = 'text-decoration: none;' >
+                      <div class='card__body'>
+                      <div class='card__body-cover'>
+                        <img src='images/Rocket.avif' alt=''>
+                      </div>
+                      <header class='card__body-header'>
+                        <p class='card__body-header-subtitle'>Rocket League</p>
+                      </header>
+                      <h2>1000$</h2>
+                    </div>
+                      </a>
+
+                      
+                      <a href = 'cars.php?Id=4' style = 'text-decoration: none;' >
+                      <div class='card__body'>
+                      <div class='card__body-cover'>
+                        <img src='images/elden-ring.jpg' alt=''>
+                      </div>
+                      <header class='card__body-header'>
+                        <p class='card__body-header-subtitle'>Elden Ring</p>
+                      </header>
+                      <h2>3100$</h2>
+                    </div>
+                      </a>
+
+                      
+                      <a href = 'cars.php?Id=5' style = 'text-decoration: none;' >
+                      <div class='card__body'>
+                      <div class='card__body-cover'>
+                        <img src='images/baldurs-gate-3.avif' alt=''>
+                      </div>
+                      <header class='card__body-header'>
+                        <p class='card__body-header-subtitle'>Baldur&lsquo;s Gate 3</p>
+                      </header>
+                      <h2>2600$</h2>
+                    </div>
+                      </a>
+
+                              </div>
+      </div>
+            <div class = "show-more" style = '       width: 11%;
+    margin: 0 auto;
+    height: 41px;
+    background: #18221c;
+    border-radius: 18px;
+    font-size: 23px;
+    margin-bottom: 10px;'><a href = "Product_Page.html" style = '    color: #fff;
+    list-style: none;
+    text-decoration: none;'>Show More</a></div>
+    </div>
+
+    <!-- Features -->
+
+    <section id="features" class="row">
+      <div class="col-lg-4 boxes">
+        <i class="fa-sharp fa-solid fa-circle-check feature-icon"></i>
+        <h3>Easy to use.</h3>
+        <p>So easy to use, even if you are busy.</p>
+      </div>
+      <div class="col-lg-4 boxes">
+        <i class="fa-solid fa-star feature-icon" ></i>
+        <h3>Elite Clientele</h3>
+        <p>We have all the games, the greatest games.</p>
+      </div >
+      <div class="col-lg-4 boxes">
+        <i class="fa-solid fa-award feature-icon"></i>
+        <h3>Feel life</h3>
+        <p>you will feel greatness after this</p>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+
+    <section id="testimonials">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-pause="hover" data-keyboard="true">
+        <h1>Best salling games</h1>
+          <div class="carousel-inner">
+                                
+
+<div class='carousel-item active'>
+<a href = "cars.php?Id=1">
+<h2 class='testimonial-text'>Halo Infinite</h2>
+<img class='img-section ' src='images/Halo_Infinite.png'>
+<em>2200$</em>
+</a></div>
+
+<div class='carousel-item'>
+<a href = "cars.php?Id=2">
+<h2 class='testimonial-text '>Forza Horizon 5</h2>
+<img class='testimonial-image img-section' src='images/Forza_Horizon_5_cover_art.jpg'>
+<em>1300$</em>
+                  </a>
+</div>
+
+<div class='carousel-item'>
+<a href = "cars.php?Id=3">
+<h2 class='testimonial-text '>Rocket League</h2>
+<img class='testimonial-image img-section' src='images/Rocket.avif'>
+<em>1000$</em>
+                  </a>
+</div>
+
+<div class='carousel-item'>
+<a href = "cars.php?Id=4">
+<h2 class='testimonial-text '>Elden Ring</h2>
+<img class='testimonial-image img-section' src='images/elden-ring.jpg'>
+<em>3100$</em>
+                  </a>
+</div>
+
+<div class='carousel-item'>
+<a href = "cars.php?Id=5">
+<h2 class='testimonial-text '>Baldur&lsquo;s Gate 3</h2>
+<img class='testimonial-image img-section' src='images/baldurs-gate-3.avif' alt='lady-profile'>
+<em>2600$</em>
+                  </a>
+</div>
+                 
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div><!-- end carousel-inner -->
+
+      </div>
+    </section>
+
+
+    <!-- Press -->
+    <section id="press">
+      <img class="press-logos" src="images/TechCrunch.png" alt="tc-logo">
+      <img class="press-logos" src="images/tnw.png" alt="tnw-logo">
+      <img class="press-logos" src="images/bizinsider.png" alt="biz-insider-logo">
+      <img class="press-logos" src="images/mashable.png" alt="mashable-logo">
+
+    </section>
+
+
+
+    
+
+
+    <!-- Call to Action -->
+      <!-- Call to Action 
+
+  <section id="cta">
+    <h3 class="h3">Download our Application for great discounts!</h3>
+    <button class="btn btn-lg btn-dark btn-f " type="button"><i class="fa-brands fa-apple" style="padding-right: 3px;"></i>Download</button>
+    <button class="btn btn-lg btn-outline-light btn-f" type="button"><i class="fa-brands fa-google-play" style="padding-right: 3px;"></i>Download</button>
+  </section>-->
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <i class="fa-brands fa-instagram" style="color: tomato;"></i>
+    <i class="fa-brands fa-twitter" style="color:aqua;"></i>
+    <i class="fa-brands fa-google" style="color:rgb(0, 137, 205);"></i>
+
+    <p class="p">© Copyright Qmotors thats for now</p>
+
+  </footer>
+
+    <script>
+      if(sessionStorage.getItem("name")!=null){
+
+        document.querySelector("#bottons").innerHTML= "<div class = 'Welcome_message' style = '    color: #fff;\
+font-size: 30px;'> hello Mr . " + sessionStorage.getItem("name") + "</div>";
+
+
+}else{
+
+
+  document.querySelector("#bottons").innerHTML= "   <a href='./signup.html'><button type='button' class='btn btn-lg btn-dark download' >Sign up</button></a>\
+<a href='./login.html' ><button  type='button'  class='btn btn-lg  btn-outline-light download'>Sign in</button></a>";
+
+
+}
+    </script>
+  </body>
+
+</html>

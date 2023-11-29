@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/bootstrap.css">
+<link rel="stylesheet" href="./css/all.min.css">
+<link rel="stylesheet" href="./css/project-A.css">
+<link rel="icon" href="./images/LOGO.ico">
+<link rel="stylesheet" href="./css/Product_Page.css">
+<!-- js bootstrap -->
+<script src="js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>User's profile</title>
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg ">
+
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="./index.html" class="navbar-brand">
+        <img src="./images/Icon.png" alt="icon" style="width: 200px;">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+          
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item" id="navbar">
+            <!--<button type="button" class="btn btn-outline-dark " >
+            <a href="./contact.php" class="nav-link">Contact</a>
+          </button>
+
+          <button type="button" class="btn btn-outline-dark">
+            <a href="#cta" class="nav-link">Cart</a>
+          </button>-->
+          <button type="button" class="btn btn-outline-dark">
+            <a href="./Product_Page.html" class="nav-link">Games</a></button>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+<script>
+  let el =" <button type='button' class='btn btn-outline-dark ' >\
+              <a href='profile.html' class='nav-link'>Profile</a>\
+            </button>";
+  let el2 =" <button type='button' class='btn btn-outline-dark ' >\
+              <a href='cart.html' class='nav-link'>Cart</a>\
+            </button>";
+  let el3 =" <button type='button' class='btn btn-outline-dark ' >\
+              <a href='login.html' class='nav-link'>Sign In</a>\
+            </button>";
+  let el4 =" <button type='button' class='btn btn-outline-dark ' >\
+              <a href='signup.html' class='nav-link'>Sign Up</a>\
+            </button>";
+  /*let btn=new HTMLButtonElement();
+  btn.className='btn btn-outline-dark ';
+  btn.type='button';
+  let lnk=new HTMLAnchorElement();
+  lnk.className='nav-link';
+  lnk.href='profile.html';
+  lnk.innerText='Profile';*/
+
+  if(sessionStorage.getItem("name")!=null)
+    document.querySelector("#navbar").innerHTML+=el+el2;
+</script>    <div class="container">
+        <div class="main">
+            <div class="row">
+                <div class="col-md-4 mt-1">
+                    <div class="card text-center sidebar">
+                        <div class="card-body" id="first">
+                            <img src="images\profile-icon.png" class="rounded-circle" alt="profile-picture" width="150">
+                            <div class="mt-3">
+                                <h3 style="color: white;" id="nameFld"></h3>
+                                <a href="index.html">Home</a>
+                                <a href="contact.php">Cart</a>
+                                <a href="Log-out.html">Signout</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 mt-1">
+                    <div class="card mb-3 content">
+                        <h1 class="m-3 pt">About</h1>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h5>Name</h5>
+                                </div>
+                                <div class="col-md-9 text-secondary">
+                                                                   </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h5>Email</h5>
+                                </div>
+                                <div class="col-md-9 text-secondary">
+                                                                    </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h5>UserName</h5>
+                                </div>
+                                <div class="col-md-9 text-secondary">
+                                    k1                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h5>Date Of Birth</h5>
+                                </div>
+                                <div class="col-md-9 text-secondary">
+                                                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 content">
+                        <h1 class="m-3">Recent Avtivites</h1>
+                            <div class="row">
+                            <dsiv class="col-md-9 text secondary" style="margin: auto auto 10px 30px">
+                                
+
+                            <br/>
+                                    <a class="btn" href="">Last Viewed car</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+      <!-- Call to Action 
+
+  <section id="cta">
+    <h3 class="h3">Download our Application for great discounts!</h3>
+    <button class="btn btn-lg btn-dark btn-f " type="button"><i class="fa-brands fa-apple" style="padding-right: 3px;"></i>Download</button>
+    <button class="btn btn-lg btn-outline-light btn-f" type="button"><i class="fa-brands fa-google-play" style="padding-right: 3px;"></i>Download</button>
+  </section>-->
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <i class="fa-brands fa-instagram" style="color: tomato;"></i>
+    <i class="fa-brands fa-twitter" style="color:aqua;"></i>
+    <i class="fa-brands fa-google" style="color:rgb(0, 137, 205);"></i>
+
+    <p class="p">© Copyright Qmotors thats for now</p>
+
+  </footer>
+    <script>document.querySelector("#nameFld").innerText=sessionStorage.getItem("name")</script>
+</body>
+</html>

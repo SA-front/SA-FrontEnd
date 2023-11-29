@@ -1,0 +1,141 @@
+
+
+
+<html lang="en" dir="ltr">
+  <head>
+    <title>Q Motors</title>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/bootstrap.css">
+<link rel="stylesheet" href="./css/all.min.css">
+<link rel="stylesheet" href="./css/project-A.css">
+<link rel="icon" href="./images/LOGO.ico">
+<link rel="stylesheet" href="./css/Product_Page.css">
+<!-- js bootstrap -->
+<script src="js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+      function signup(){
+        sessionStorage.setItem("name",document.querySelector("#name").value);
+        location="index.html";
+      }
+    </script>
+  </head>
+  <body>
+        <nav class="navbar navbar-expand-lg ">
+
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="./index.html" class="navbar-brand">
+        <img src="./images/Icon.png" alt="icon" style="width: 200px;">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+          
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item" id="navbar">
+            <!--<button type="button" class="btn btn-outline-dark " >
+            <a href="./contact.php" class="nav-link">Contact</a>
+          </button>
+
+          <button type="button" class="btn btn-outline-dark">
+            <a href="#cta" class="nav-link">Cart</a>
+          </button>-->
+          <button type="button" class="btn btn-outline-dark">
+            <a href="./Product_Page.html" class="nav-link">Games</a></button>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+<script>
+  let el =" <button type='button' class='btn btn-outline-dark ' >\
+              <a href='profile.html' class='nav-link'>Profile</a>\
+            </button>";
+  let el2 =" <button type='button' class='btn btn-outline-dark ' >\
+              <a href='cart.html' class='nav-link'>Cart</a>\
+            </button>";
+  let el3 =" <button type='button' class='btn btn-outline-dark ' >\
+              <a href='login.html' class='nav-link'>Sign In</a>\
+            </button>";
+  let el4 =" <button type='button' class='btn btn-outline-dark ' >\
+              <a href='signup.html' class='nav-link'>Sign Up</a>\
+            </button>";
+  /*let btn=new HTMLButtonElement();
+  btn.className='btn btn-outline-dark ';
+  btn.type='button';
+  let lnk=new HTMLAnchorElement();
+  lnk.className='nav-link';
+  lnk.href='profile.html';
+  lnk.innerText='Profile';*/
+
+  if(sessionStorage.getItem("name")!=null)
+    document.querySelector("#navbar").innerHTML+=el+el2;
+</script>    <!--sign up screen-->
+    <div class="login">
+      <h1>Sign-up</h1>
+      <form class="" action="/SA-Project/signup.php" method="POST">
+        <div class="row row-signup"> 
+          <div class=" col-lg-6 col-md-6 col-sm-8"> 
+            <label class="label ">Full Name </label><br>
+            <label class="label">User name </label><br>
+            <label class="label">E-mail: </label><br>
+            <label class="label">NEW Password: </label><br>
+            <label class="label">confirm Password: </label>
+          </div>
+          
+          <div class=" col-lg-6 col-md-6 col-sm-4 ">
+            <input class="input form-control" type="text" name="name" value="" id="name" required>
+            <input class="input form-control" type="text" name="username" value="" required>
+            <input class="input form-control" type="email" name="email" value="" required>
+            
+            <input class="input form-control" type="password" name="password" value="" required>
+            
+            <input class="input form-control" type="password" name="confirm-password" value="" required>
+          </div>
+    
+          <br>
+        </div> 
+        <fieldset>
+          <legend>Choose your gender</legend>
+          <input type="radio" name="gender" id="gender-male" value="male">
+          <label for="gender-male">Male</label>
+          <input type="radio" name="gender" id="gender-female" value="female">
+          <label for="gender-female">Female</label>
+          <input type="radio" name="gender" id="gender-other" value="other">
+          <label for="gender-other">Other</label>
+          <input type="radio" name="gender" id="gender-none" value="none" checked>
+          <label for="gender-none">Prefer not to say</label>
+        </fieldset>
+        <fieldset>
+          <legend>Choose your Birth date</legend>
+          <input type="date" name="birth-date" required>
+        </fieldset><br>
+   
+        <input type="button" name="finish" value="submit" role="button" class="btn btn-lg btn-outline-light" onclick="signup()">
+          <br/><br/>
+                 <button  class="btn"><a href = "login.html">Login</a></button>
+      </form>
+    </div>
+      <!-- Call to Action 
+
+  <section id="cta">
+    <h3 class="h3">Download our Application for great discounts!</h3>
+    <button class="btn btn-lg btn-dark btn-f " type="button"><i class="fa-brands fa-apple" style="padding-right: 3px;"></i>Download</button>
+    <button class="btn btn-lg btn-outline-light btn-f" type="button"><i class="fa-brands fa-google-play" style="padding-right: 3px;"></i>Download</button>
+  </section>-->
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <i class="fa-brands fa-instagram" style="color: tomato;"></i>
+    <i class="fa-brands fa-twitter" style="color:aqua;"></i>
+    <i class="fa-brands fa-google" style="color:rgb(0, 137, 205);"></i>
+
+    <p class="p">© Copyright Qmotors thats for now</p>
+
+  </footer>
+  </body>
+</html>

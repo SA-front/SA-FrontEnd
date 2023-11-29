@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/bootstrap.css">
+<link rel="stylesheet" href="./css/all.min.css">
+<link rel="stylesheet" href="./css/project-A.css">
+<link rel="icon" href="./images/LOGO.ico">
+<link rel="stylesheet" href="./css/Product_Page.css">
+<!-- js bootstrap -->
+<script src="js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/cars.css">
+        <title>Qmotors</title>
+    </head>
+    <body>
+
+            <nav class="navbar navbar-expand-lg ">
+
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="./index.html" class="navbar-brand">
+        <img src="./images/Icon.png" alt="icon" style="width: 200px;">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+          
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item" id="navbar">
+            <!--<button type="button" class="btn btn-outline-dark " >
+            <a href="./contact.php" class="nav-link">Contact</a>
+          </button>
+
+          <button type="button" class="btn btn-outline-dark">
+            <a href="#cta" class="nav-link">Cart</a>
+          </button>-->
+          <button type="button" class="btn btn-outline-dark">
+            <a href="./Product_Page.html" class="nav-link">Games</a></button>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+<script>
+  let el =" <button type='button' class='btn btn-outline-dark ' >\
+              <a href='profile.html' class='nav-link'>Profile</a>\
+            </button>";
+  let el2 =" <button type='button' class='btn btn-outline-dark ' >\
+              <a href='cart.html' class='nav-link'>Cart</a>\
+            </button>";
+  let el3 =" <button type='button' class='btn btn-outline-dark ' >\
+              <a href='login.html' class='nav-link'>Sign In</a>\
+            </button>";
+  let el4 =" <button type='button' class='btn btn-outline-dark ' >\
+              <a href='signup.html' class='nav-link'>Sign Up</a>\
+            </button>";
+  /*let btn=new HTMLButtonElement();
+  btn.className='btn btn-outline-dark ';
+  btn.type='button';
+  let lnk=new HTMLAnchorElement();
+  lnk.className='nav-link';
+  lnk.href='profile.html';
+  lnk.innerText='Profile';*/
+
+  if(sessionStorage.getItem("name")!=null)
+    document.querySelector("#navbar").innerHTML+=el+el2;
+</script>        <!--content-->
+        
+            <section id='content-image'>
+            <div class='row'>
+                <div class='col-lg-6'>
+                    <img class='img-section' src='images/baldurs-gate-3.avif' alt=''>
+                </div>
+                <div class='col-lg-6' style='text-align: left;' >
+                    <h1 >Baldur&lsquo;s Gate 3</h1>
+                    <h3>$2600</h3>
+                </div>
+                <p>The new BMW i7, a Sedan from BMW, was launched in India in Jan 2023. i7 has received 100% rating score from our users.<br /><br />BMW i7 price starts from ₹ 1.95 Crore in India. i7 is available in 7 colours - Black Sapphire Metallic, Individual Dravit Grey Metallic, Individual Tanzanite Blue Metallic, Brooklyn Grey Metallic, Carbon Black Metallic, Mineral White Metallic, and Oxide Grey Metallic. i7 seating capacity is 5 People. i7 has received Not Tested star NCAP Rating safety rating.<br /><br />i7 is available in 1 versions and 1 fuel options - Electric.<br /><br />i7 competes with BMW 7 Series, Audi e-tron GT and Mercedes-Benz EQS in India. </p>
+            </div>
+        </section>
+            
+            
+                 
+        
+        <div  id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-keyboard="true" style='background-color:#ffffff47' >
+  
+        <div class="carousel-inner">
+    <div class="carousel-item active">
+    <img class="testimonial-image img-section col-lg-2" src="images/baldurs-gate-3.avif" style="width:50%">
+            <div class="text"><h4>Baldur&lsquo;s Gate 3</h4></div> 
+        </div>
+    <div class="carousel-item">
+    <img class="testimonial-image img-section" src="images/baldurs-gate-3.avif" style="width:50%">
+            <div class="text"><h4>Baldur&lsquo;s Gate 3</h4></div> </div>
+    <div class="carousel-item">
+    <img class="testimonial-image img-section" src="images/baldurs-gate-3.avif" style="width:50%">
+            <div class="text"><h4>Baldur&lsquo;s Gate 3</h4></div>
+    </div>
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" >
+    <span  class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+          <!-- Call to Action 
+
+  <section id="cta">
+    <h3 class="h3">Download our Application for great discounts!</h3>
+    <button class="btn btn-lg btn-dark btn-f " type="button"><i class="fa-brands fa-apple" style="padding-right: 3px;"></i>Download</button>
+    <button class="btn btn-lg btn-outline-light btn-f" type="button"><i class="fa-brands fa-google-play" style="padding-right: 3px;"></i>Download</button>
+  </section>-->
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <i class="fa-brands fa-instagram" style="color: tomato;"></i>
+    <i class="fa-brands fa-twitter" style="color:aqua;"></i>
+    <i class="fa-brands fa-google" style="color:rgb(0, 137, 205);"></i>
+
+    <p class="p">© Copyright Qmotors thats for now</p>
+
+  </footer>
+    </body>
+
+</html>
