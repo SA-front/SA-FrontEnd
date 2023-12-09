@@ -1,9 +1,5 @@
 # SA-Project
 #### To Do:
-- delivery pages
-    - delivery login
-    - orders page
-    - update delivery status page
 - admin pages
     - manage products
     - manage discounts
@@ -14,5 +10,6 @@
 
 #### Done:
 - all customer pages except manage account
+- all delivery pages
 
 #### Mostly Done:
