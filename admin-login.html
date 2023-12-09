@@ -36,44 +36,11 @@
 
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item" id="navbar">
-                    <!--<button type="button" class="btn btn-outline-dark " >
-            <a href="./contact.php" class="nav-link">Contact</a>
-          </button>
-
-          <button type="button" class="btn btn-outline-dark">
-            <a href="#cta" class="nav-link">Cart</a>
-          </button>-->
-                    <button type="button" class="btn btn-outline-dark">
-            <a href="./Product_Page.html" class="nav-link">Games</a></button>
                 </li>
             </ul>
         </div>
 
     </nav>
-    <script>
-        let el = " <button type='button' class='btn btn-outline-dark ' >\
-              <a href='profile.html' class='nav-link'>Profile</a>\
-            </button>";
-        let el2 = " <button type='button' class='btn btn-outline-dark ' >\
-              <a href='cart.html' class='nav-link'>Cart</a>\
-            </button>";
-        let el3 = " <button type='button' class='btn btn-outline-dark ' >\
-              <a href='login.html' class='nav-link'>Sign In</a>\
-            </button>";
-        let el4 = " <button type='button' class='btn btn-outline-dark ' >\
-              <a href='signup.html' class='nav-link'>Sign Up</a>\
-            </button>";
-        /*let btn=new HTMLButtonElement();
-        btn.className='btn btn-outline-dark ';
-        btn.type='button';
-        let lnk=new HTMLAnchorElement();
-        lnk.className='nav-link';
-        lnk.href='profile.html';
-        lnk.innerText='Profile';*/
-
-        if (sessionStorage.getItem("name") != null)
-            document.querySelector("#navbar").innerHTML += el + el2;
-    </script>
     <form class="login2">
         <div class="row mb-3">
             <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>

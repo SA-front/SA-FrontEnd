@@ -346,3 +346,7 @@ input
     margin: 0;
     
   }
+
+  .big-i::before{
+    font-size: 80pt;
+  }
